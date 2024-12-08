@@ -2,8 +2,8 @@ function carregar() {
     var msg = window.document.querySelector('#msg')
     var img = window.document.querySelector('#imagem')
     var data = new Date()
-    //var hora = data.getHours()
-    var hora = 4
+    var hora = data.getHours()
+    //var hora = 4
     msg.innerHTML = `Agora São ${hora} do Dia`
     if (hora >= 6 && hora <= 12){
         //BOM DIA
