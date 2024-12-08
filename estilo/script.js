@@ -3,8 +3,10 @@ function carregar() {
     var img = window.document.querySelector('#imagem')
     var data = new Date()
     var hora = data.getHours()
+    var min = data.getMinutes()
+    var seg = data.getSeconds()
     //var hora = 4
-    msg.innerHTML = `Agora São ${hora} do Dia`
+    msg.innerHTML = `Agora São ${hora} horas ${min} minutos e ${seg} segundos do Dia`
     if (hora >= 6 && hora < 12){
         //BOM DIA
         img.src ='imagem/dia.png'
