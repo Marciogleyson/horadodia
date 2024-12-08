@@ -5,25 +5,25 @@ function carregar() {
     var hora = data.getHours()
     //var hora = 4
     msg.innerHTML = `Agora São ${hora} do Dia`
-    if (hora >= 6 && hora <= 12){
+    if (hora >= 6 && hora < 12){
         //BOM DIA
         img.src ='imagem/dia.png'
         window.document.body.style.background = '#e2cd9f'
     
-    }else if ( hora > 12 && hora < 18){
+    }else if ( hora >= 12 && hora < 18){
         //BOA TARDE
         img.src = 'imagem/tarde.png'
         window.document.body.style.background = '#b9846f'
-    }else if (hora >= 0 && hora < 6){
-        //BONS SONHOS
-        img.src = 'imagem/madrugada.png'
-        window.document.body.style.background = 'black'
-
-
-    }else {
+    }else if (hora >= 0 && hora < 5){
         //BOA NOITE
         img.src = 'imagem/noite.png'
         window.document.body.style.background = '#515154'
+
+    }else {
+        
+        //BONS SONHOS
+        img.src = 'imagem/madrugada.png'
+        window.document.body.style.background = 'black'
     }
      
         
